@@ -25,6 +25,8 @@ This error is triggered when a Mutex object error occurs in Kernel/RTOS layer.
 //2. I believe the wait_ns(0) statement allows other threads and interrupts to be executed, ensuring proper multitasking and interrupt handling properly.
 //2. If I remove the wait_ns(0) statement, the code may continuously loop without giving other threads or interrupts the opportunity to execute.
 
+//3. I left the wait_ns(0) in place, now the code is running as intended.
+
 #include "mbed.h"
 InterruptIn bttn(PC_13);
 int flag0 = 0;
