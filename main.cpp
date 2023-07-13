@@ -27,6 +27,8 @@ This error is triggered when a Mutex object error occurs in Kernel/RTOS layer.
 
 //3. I left the wait_ns(0) in place, now the code is running as intended.
 
+//4. Final code as follows:
+
 #include "mbed.h"
 InterruptIn bttn(PC_13);
 int flag0 = 0;
